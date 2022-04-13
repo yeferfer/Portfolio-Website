@@ -1,5 +1,6 @@
 .app {
   height: 100vh;
+  overflow-y: hidden;
 
   .sections {
     width: 100%;
@@ -7,6 +8,10 @@
     background-color: lightsalmon;
     position: relative;
     top: 70px;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     > * {
       width: 100vw;
