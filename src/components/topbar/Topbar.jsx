@@ -1,4 +1,3 @@
-import React from "react";
 import "./topbar.scss";
 import { Person, Mail } from "@mui/icons-material";
 
