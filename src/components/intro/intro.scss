@@ -49,6 +49,19 @@
           font-size: inherit;
           color: crimson;
         }
+
+        .ityped-cursor {
+          animation: blick 1s infinite;
+        }
+
+        @keyframes blick {
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
       }
     }
     a {
