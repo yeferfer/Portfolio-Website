@@ -1,12 +1,18 @@
 @import "../../global.scss";
 
 .intro {
+  overflow: hidden;
   background-color: white;
   display: flex;
 
   @include mobile {
     flex-direction: column;
     align-items: center;
+  }
+
+  @include table {
+    flex-direction: row;
+    align-items: normal;
   }
 
   .left {
@@ -27,11 +33,21 @@
         align-items: flex-start;
       }
 
+      @include table {
+        width: 350px;
+        height: 280px;
+        align-items: flex-end;
+      }
+
       img {
         height: 90%;
 
         @include mobile {
           height: 50%;
+        }
+
+        @include table {
+          height: 90%;
         }
       }
     }

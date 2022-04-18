@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .works {
+  overflow: hidden;
   background-color: crimson;
   display: flex;
   align-items: center;
@@ -16,6 +17,10 @@
       display: none;
     }
 
+    @include table {
+      display: block;
+    }
+
     &.left {
       left: 100px;
       transform: rotateY(180deg);
@@ -27,6 +32,7 @@
   }
 
   .slider {
+    overflow: hidden;
     height: 350px;
     display: flex;
     position: absolute;
@@ -39,13 +45,19 @@
       justify-content: center;
     }
 
+    @include table {
+      flex-direction: row;
+    }
+
     .container {
+      overflow: hidden;
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .item {
+        overflow: hidden;
         width: 700px;
         height: 100%;
         background-color: white;
@@ -58,6 +70,11 @@
           width: 80%;
           height: 150px;
           margin: 15px 0;
+        }
+
+        @include table {
+          width: 50%;
+          height: 200px;
         }
 
         .left {
@@ -88,11 +105,20 @@
                 height: 20px;
               }
 
+              @include table {
+                width: 30px;
+                height: 30px;
+              }
+
               img {
                 width: 25px;
 
                 @include mobile {
                   width: 15px;
+                }
+
+                @include table {
+                  width: 20px;
                 }
               }
             }
@@ -101,6 +127,10 @@
 
               @include mobile {
                 font-size: 13px;
+              }
+
+              @include table {
+                font-size: 15px;
               }
             }
             p {
