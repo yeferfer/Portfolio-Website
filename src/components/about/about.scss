@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.works {
+.about {
   overflow: hidden;
   background-color: crimson;
   display: flex;
@@ -156,7 +156,8 @@
           overflow: hidden;
 
           img {
-            width: 400px;
+            width: 93%;
+            height: 77%;
             transform: rotate(-10deg);
           }
         }
