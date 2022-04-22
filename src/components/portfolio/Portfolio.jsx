@@ -7,7 +7,6 @@ import {
   webPortfolio,
   mobilePortfolio,
   designPortfolio,
-  contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -18,7 +17,6 @@ export default function Portfolio() {
     { id: "web", title: "Web App" },
     { id: "mobile", title: "Mobile App" },
     { id: "design", title: "Design" },
-    { id: "content", title: "Content" },
   ];
 
   useEffect(() => {
@@ -34,9 +32,6 @@ export default function Portfolio() {
         break;
       case "design":
         setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -57,7 +52,12 @@ export default function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
+          <div
+            className="item"
+            onClick={() => {
+              window.location = d.url;
+            }}
+          >
             <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>

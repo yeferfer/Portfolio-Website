@@ -4,13 +4,24 @@ import { useEffect, useRef } from "react";
 
 export default function Intro() {
   const textRef = useRef();
+  const textRef1 = useRef();
 
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Designer", "Content creator"],
+      strings: [
+        "Freelancer Developer",
+        "Freelancer Front-End",
+        "Freelancer Engenner",
+        "Employee Developer",
+        "Employee Front-End",
+        "Employee Engenner",
+        "Entrepreneur Developer",
+        "Entrepreneur Front-End",
+        "Entrepreneur Engenner",
+      ],
     });
   }, []);
 
@@ -23,10 +34,10 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
+          <h2>Hello Word, I'm</h2>
           <h1>Yeferson Culma</h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">
