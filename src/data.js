@@ -8,7 +8,7 @@ export const featuredPortfolio = [
   {
     id: 2,
     title: "Porfolio GitHub",
-    img: "https://logos-marcas.com/wp-content/uploads/2020/11/GitHub-Logo.png",
+    img: "https://www.returngis.net/wp-content/uploads/2021/01/GitHub.png",
     url: "https://github.com/yeferfer",
   },
   {

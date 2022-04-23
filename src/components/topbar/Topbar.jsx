@@ -1,15 +1,18 @@
 import "./topbar.scss";
-import { Person, Mail } from "@mui/icons-material";
+import { Home, Person, Mail } from "@mui/icons-material";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
-            genius.
-          </a>
           <div className="itemContainer">
+            <Home
+              className="logo"
+              onClick={() => {
+                window.location.href = "#intro";
+              }}
+            ></Home>
             <Person className="icon" />
             <span>+57 3223446744</span>
           </div>

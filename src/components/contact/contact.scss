@@ -1,7 +1,6 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
   display: flex;
 
   @include mobile {
@@ -13,14 +12,25 @@
   }
 
   .left {
+    background-color: white;
     flex: 1;
     overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 
     img {
-      height: 100%;
+      margin-top: 100px;
+      height: 80%;
+
+      @include mobile {
+        margin-top: 0px;
+        height: 100%;
+      }
     }
   }
   .right {
+    background-color: #1d1f23;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -28,6 +38,7 @@
     justify-content: center;
 
     h2 {
+      color: white;
       font-size: 30px;
     }
 
@@ -64,8 +75,8 @@
       button {
         width: 150px;
         height: 30px;
-        color: white;
-        background-color: crimson;
+        color: black;
+        background-color: #bdbcbc;
         border: none;
         border-radius: 10px;
         font-weight: 500;
