@@ -1,5 +1,10 @@
 @import "../../global.scss";
 
+.darkPortfolioText {
+  color: white;
+  transition: all 2s ease;
+}
+
 .portfolioList {
   font-size: 12px;
   margin-right: 50px;

@@ -1,10 +1,9 @@
 import "./intro.scss";
 import { init } from "ityped";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react"; 
 
 export default function Intro() {
   const textRef = useRef();
-  const textRef1 = useRef();
 
   useEffect(() => {
     init(textRef.current, {
@@ -41,7 +40,7 @@ export default function Intro() {
           </h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
+          <img src="assets/down-black.png" alt="" className="arrowDown" />
         </a>
       </div>
     </div>

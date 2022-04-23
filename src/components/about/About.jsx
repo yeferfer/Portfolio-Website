@@ -1,30 +1,30 @@
 import React from "react";
 import { useState } from "react";
-import "./works.scss";
+import "./about.scss";
 
-export default function Works() {
+export default function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
+      icon: "./assets/globe.png",
       title: "Web Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      desc: "The design of web applications, I do it to follow the appropriate metrics for a real project.",
+      img: "https://blog.ida.cl/wp-content/uploads/sites/5/2016/09/website-development-vs-web-application-development.jpg",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
+      icon: "./assets/mobile.png",
       title: "Mobile Application",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      desc: "I have made mobile applications using basic components, however that does not stop me from continuing to grow and study new tools.",
+      img: "https://www.muycomputerpro.com/wp-content/uploads/2016/02/aplicaciones-iphone.jpg",
     },
     {
       id: "3",
       icon: "./assets/writing.png",
-      title: "Branding",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      title: "Larning",
+      desc: "I am currently learning about React and Flutter. other things that go directly with the above are SASS.",
+      img: "https://www.dignited.com/wp-content/uploads/2020/01/software-development.png",
     },
   ];
 
@@ -35,14 +35,14 @@ export default function Works() {
   };
 
   return (
-    <div className="works" id="works">
+    <div className="about" id="about">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
           <div className="container">
-            <div className="item">
+            <div className="item itemAbout">
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
@@ -54,24 +54,21 @@ export default function Works() {
                 </div>
               </div>
               <div className="right">
-                <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                  alt=""
-                />
+                <img src={d.img} alt="" />
               </div>
             </div>
           </div>
         ))}
       </div>
       <img
-        src="assets/arrow.png"
-        className="arrow left"
+        src="assets/arrow-black.png"
+        className="arrow left arrows"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
-        className="arrow right"
+        src="assets/arrow-black.png"
+        className="arrow right arrows"
         alt=""
         onClick={() => handleClick()}
       />

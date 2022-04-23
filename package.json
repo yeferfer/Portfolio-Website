@@ -1,6 +1,5 @@
 {
-  "change": "CHANGE THE ATTRIBUTE 'name' TO YOUR NAME APP 😬",
-  "name": "my-app",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,8 +1,17 @@
 @import "../../global.scss";
 
+.darkIntro {
+  background-color: #393e46;
+  transition: all 2s ease;
+}
+
+.darkText {
+  color: white;
+  transition: all 2s ease;
+}
+
 .intro {
   overflow: hidden;
-  background-color: white;
   display: flex;
 
   @include mobile {
@@ -22,7 +31,7 @@
     .imgContainer {
       width: 700px;
       height: 700px;
-      background-color: crimson;
+      background-color: #d8d8e3;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -53,8 +62,10 @@
     }
   }
   .right {
+    overflow: hidden;
     flex: 0.5;
     position: relative;
+
 
     .wrapper {
       width: 100%;
@@ -89,7 +100,6 @@
 
         span {
           font-size: inherit;
-          color: crimson;
         }
 
         .ityped-cursor {
@@ -112,7 +122,7 @@
       left: 40%;
 
       img {
-        width: 30px;
+        width: 80px;
         animation: arrowBlink 2s infinite;
       }
 
@@ -123,4 +133,5 @@
       }
     }
   }
+  transition: all 2s ease;
 }

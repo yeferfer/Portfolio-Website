@@ -1,8 +1,17 @@
 @import "../../global.scss";
 
-.works {
+.darkAbout {
+  background-color: #22252a;
+  transition: all 2s ease;
+}
+
+.darkAboutItem {
+  background-color: white !important;
+  transition: all 2s ease;
+}
+
+.about {
   overflow: hidden;
-  background-color: crimson;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,9 +67,9 @@
 
       .item {
         overflow: hidden;
+        background-color: #d8d8e3;
         width: 700px;
         height: 100%;
-        background-color: white;
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -124,6 +133,7 @@
             }
             h2 {
               font-size: 20px;
+              color: black;
 
               @include mobile {
                 font-size: 13px;
@@ -156,11 +166,13 @@
           overflow: hidden;
 
           img {
-            width: 400px;
+            width: 93%;
+            height: 77%;
             transform: rotate(-10deg);
           }
         }
       }
     }
   }
+  transition: all 2s ease;
 }
