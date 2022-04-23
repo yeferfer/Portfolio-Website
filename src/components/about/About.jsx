@@ -42,7 +42,7 @@ export default function About() {
       >
         {data.map((d) => (
           <div className="container">
-            <div className="item">
+            <div className="item itemAbout">
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
@@ -61,14 +61,14 @@ export default function About() {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
-        className="arrow left"
+        src="assets/arrow-black.png"
+        className="arrow left arrows"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
-        className="arrow right"
+        src="assets/arrow-black.png"
+        className="arrow right arrows"
         alt=""
         onClick={() => handleClick()}
       />

@@ -1,8 +1,17 @@
 @import "../../global.scss";
 
+.darkIntro {
+  background-color: #393e46;
+  transition: all 2s ease;
+}
+
+.darkText {
+  color: white;
+  transition: all 2s ease;
+}
+
 .intro {
   overflow: hidden;
-  background-color: #393e46;
   display: flex;
 
   @include mobile {
@@ -53,8 +62,10 @@
     }
   }
   .right {
+    overflow: hidden;
     flex: 0.5;
     position: relative;
+
 
     .wrapper {
       width: 100%;
@@ -72,18 +83,15 @@
       h1 {
         font-size: 60px;
         margin: 10px 0;
-        color: white;
 
         @include mobile {
           font-size: 40px;
         }
       }
       h2 {
-        color: white;
         font-size: 35px;
       }
       h3 {
-        color: white;
         font-size: 30px;
 
         @include mobile {
@@ -92,7 +100,6 @@
 
         span {
           font-size: inherit;
-          color: white;
         }
 
         .ityped-cursor {
@@ -126,4 +133,5 @@
       }
     }
   }
+  transition: all 2s ease;
 }
