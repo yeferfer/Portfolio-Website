@@ -54,7 +54,6 @@
         transform: scale(1.9);
 
         @include mobile {
-          height: 50%;
           transform: scale(1.2);
         }
 
@@ -81,6 +80,7 @@
       @include mobile {
         padding-left: 0;
         align-items: center;
+        height: 70%;
       }
 
       h1 {
@@ -127,6 +127,11 @@
       img {
         width: 80px;
         animation: arrowBlink 2s infinite;
+
+        @include mobile {
+          margin-bottom: 80%;
+          transform: translate(-10px, 0px);
+        }
       }
 
       @keyframes arrowBlink {

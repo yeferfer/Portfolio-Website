@@ -4,7 +4,9 @@
   color: white !important;
   transition: all 2s ease;
 }
-
+li {
+  overflow: hidden;
+}
 .portfolioList {
   font-size: 12px;
   margin-right: 50px;
