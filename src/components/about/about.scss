@@ -10,6 +10,10 @@
   transition: all 2s ease;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .about {
   overflow: hidden;
   display: flex;
@@ -149,10 +153,12 @@
                 display: none;
               }
             }
-            span {
+            a {
               font-size: 12px;
               font-weight: 600;
               text-decoration: underline;
+              text-decoration: none;
+              color: black;
               cursor: pointer;
             }
           }

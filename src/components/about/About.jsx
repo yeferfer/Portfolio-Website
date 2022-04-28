@@ -29,7 +29,7 @@ export default function About() {
       title: "Larning",
       desc: "I am currently learning about React and Flutter. other things that go directly with the above are SASS.",
       img: "https://www.dignited.com/wp-content/uploads/2020/01/software-development.png",
-      url: "https://RESUME",
+      url: "#intro",
       descUrl: "RESUME",
     },
   ];
@@ -56,13 +56,15 @@ export default function About() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span
+                  <a
+                    href="assets/CV YefersonCulma.pdf"
+                    download="CV Yeferson Culma"
                     onClick={() => {
                       window.location = d.url;
                     }}
                   >
                     {d.descUrl}
-                  </span>
+                  </a>
                 </div>
               </div>
               <div className="right">
