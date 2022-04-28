@@ -92,6 +92,10 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                   document
                     .querySelector(".contact")
                     .classList.toggle("darkContact");
+
+                  document
+                    .querySelector(".aboutTitle")
+                    .classList.toggle("darktext");
                 })
               }
             ></input>

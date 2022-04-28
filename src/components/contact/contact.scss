@@ -5,6 +5,11 @@
   transition: all 2s ease;
 }
 
+.darktext {
+  color: white !important;
+  transition: all 2s ease;
+}
+
 .hidden {
   display: none;
 }
@@ -22,11 +27,15 @@
 
   .left {
     background-color: white;
-    flex: 1;
+    flex: 0.5;
     overflow: hidden;
     align-content: center;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+      margin-bottom: 10%;
+    }
 
     img {
       margin-top: 100px;
@@ -40,15 +49,19 @@
   }
 
   .right {
-    flex: 1;
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     h2 {
-      color: white;
+      color: black;
       font-size: 30px;
+
+      @include mobile {
+        margin-top: -20%;
+      }
     }
 
     form {
