@@ -11,6 +11,8 @@ export default function About() {
       title: "Web Design",
       desc: "The design of web applications, I do it to follow the appropriate metrics for a real project.",
       img: "https://blog.ida.cl/wp-content/uploads/sites/5/2016/09/website-development-vs-web-application-development.jpg",
+      url: "https://www.github.com/yeferfer",
+      descUrl: "GITHUB",
     },
     {
       id: "2",
@@ -18,6 +20,8 @@ export default function About() {
       title: "Mobile Application",
       desc: "I have made mobile applications using basic components, however that does not stop me from continuing to grow and study new tools.",
       img: "https://www.muycomputerpro.com/wp-content/uploads/2016/02/aplicaciones-iphone.jpg",
+      url: "https://www.linkedin.com/in/yefersonculma",
+      descUrl: "LINKEDIN",
     },
     {
       id: "3",
@@ -25,6 +29,8 @@ export default function About() {
       title: "Larning",
       desc: "I am currently learning about React and Flutter. other things that go directly with the above are SASS.",
       img: "https://www.dignited.com/wp-content/uploads/2020/01/software-development.png",
+      url: "https://RESUME",
+      descUrl: "RESUME",
     },
   ];
 
@@ -50,7 +56,13 @@ export default function About() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <span
+                    onClick={() => {
+                      window.location = d.url;
+                    }}
+                  >
+                    {d.descUrl}
+                  </span>
                 </div>
               </div>
               <div className="right">

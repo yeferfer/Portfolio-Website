@@ -29,6 +29,7 @@
     overflow: hidden;
 
     .imgContainer {
+      overflow: hidden;
       width: 700px;
       height: 700px;
       background-color: #d8d8e3;
@@ -49,13 +50,16 @@
       }
 
       img {
-        height: 90%;
+        height: 70%;
+        transform: scale(1.9);
 
         @include mobile {
           height: 50%;
+          transform: scale(1.2);
         }
 
         @include table {
+          transform: scale(1.5);
           height: 90%;
         }
       }
