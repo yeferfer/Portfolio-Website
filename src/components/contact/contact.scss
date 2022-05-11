@@ -1,13 +1,19 @@
 @import "../../global.scss";
 
+* {
+  transition: all 2s ease;
+}
+
 .darkContact {
   background-color: #1d1f23;
-  transition: all 2s ease;
 }
 
 .darktext {
   color: white !important;
-  transition: all 2s ease;
+}
+
+.darkForm {
+  border-color: white !important;
 }
 
 .hidden {
@@ -71,6 +77,14 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      border: dashed;
+      border-width: 2px 4px;
+      border-radius: 40px;
+
+      @include mobile {
+        padding-top: 50px;
+        height: 100%;
+      }
 
       input {
         width: 300px;
@@ -113,5 +127,4 @@
       }
     }
   }
-  transition: all 2s ease;
 }

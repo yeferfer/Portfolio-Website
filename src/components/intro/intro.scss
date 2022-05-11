@@ -1,13 +1,15 @@
 @import "../../global.scss";
 
+* {
+  transition: all 2s ease;
+}
+
 .darkIntro {
   background-color: #393e46;
-  transition: all 2s ease;
 }
 
 .darkText {
   color: white;
-  transition: all 2s ease;
 }
 
 .intro {
@@ -141,5 +143,4 @@
       }
     }
   }
-  transition: all 2s ease;
 }

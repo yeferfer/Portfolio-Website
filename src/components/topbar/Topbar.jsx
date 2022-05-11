@@ -90,12 +90,16 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     .classList.toggle("darkAboutItem");
 
                   document
+                    .querySelector(".aboutTitle")
+                    .classList.toggle("darktext");
+
+                  document
                     .querySelector(".contact")
                     .classList.toggle("darkContact");
 
                   document
-                    .querySelector(".aboutTitle")
-                    .classList.toggle("darktext");
+                    .querySelector(".formCont")
+                    .classList.toggle("darkForm");
                 })
               }
             ></input>

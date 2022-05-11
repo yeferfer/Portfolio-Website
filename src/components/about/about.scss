@@ -1,13 +1,15 @@
 @import "../../global.scss";
 
+* {
+  transition: all 2s ease;
+}
+
 .darkAbout {
   background-color: #22252a;
-  transition: all 2s ease;
 }
 
 .darkAboutItem {
   background-color: white !important;
-  transition: all 2s ease;
 }
 
 .hidden {
@@ -96,6 +98,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          padding-left: 25px;
 
           .leftContainer {
             width: 90%;
@@ -174,11 +177,10 @@
           img {
             width: 93%;
             height: 77%;
-            transform: rotate(-10deg);
+            padding-right: 20px;
           }
         }
       }
     }
   }
-  transition: all 2s ease;
 }

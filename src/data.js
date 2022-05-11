@@ -29,7 +29,7 @@ export const webPortfolio = [
   {
     id: 2,
     title: "Web React Clear",
-    img: "https://www2.deloitte.com/content/dam/Deloitte/es/Images/promo_images/tecnologia/Deloitte-ES-Tecnolog%C3%ADa-React-Native-1x1.png/_jcr_content/renditions/cq5dam.web.231.231.desktop.jpeg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/React_Native_Logo.png/375px-React_Native_Logo.png",
     url: "https://github.com/yeferfer/React-Web-Clear",
   },
   {

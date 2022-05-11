@@ -39,8 +39,8 @@ export default function Contact() {
         <img src="assets/shake.svg" alt="" />
       </div>
       <div className="right">
-        <h2 className="aboutTitle">Contact.</h2>
-        <form ref={form} onSubmit={handleSubmit}>
+        <form ref={form} className="formCont" onSubmit={handleSubmit}>
+          <h2 className="aboutTitle">Contact.</h2>
           <input type="text" placeholder="Name" className="form-Name" />
           <input type="text" placeholder="Email" className="form-Email" />
           <textarea placeholder="Message" className="form-Message"></textarea>
